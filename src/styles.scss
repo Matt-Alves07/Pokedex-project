@@ -1,7 +1,7 @@
 //Local style files
-@use './config-scss/reset.scss';
-@use './config-scss/rem-calc.scss';
-@use './config-scss/variables.scss';
+@import './config-scss/reset.scss';
+@import './config-scss/rem-calc.scss';
+@import './config-scss/variables.scss';
 
 //Font family link
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
@@ -13,6 +13,6 @@ html {
 
 main {
     margin: 0 auto;
+    width: rem-calc(600);
     box-sizing: border-box;
-    max-width: rem-calc(600);
 }
