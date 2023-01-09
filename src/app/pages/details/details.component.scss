@@ -1,0 +1,97 @@
+@import '../../../config-scss/rem-calc.scss';
+
+:host {
+    margin-top: rem-calc(40);
+
+    .pokemon__names {
+        height: 75px;
+        display: flex;
+        position: relative;
+        align-items: flex-end;
+        padding: 0 rem-calc(30);
+        justify-content: flex-end;
+
+        h1 {
+            color: var(--white);
+            font-size: rem-calc(32);
+            text-transform: capitalize;
+        }
+
+        h2 {
+            top: 0;
+            font-weight: 100;
+            position: absolute;
+            font-size: rem-calc(60);
+            color: rgba(255,255,255,0.1);
+        }
+    }
+
+    .pokemon__status {
+        position: relative;
+
+        img {
+            position: absolute;
+            top: rem-calc(-90);
+            left: rem-calc(30);
+            max-width: rem-calc(130);
+        }
+
+        &__statistics {
+            display: flex;
+            min-height: 50.1vh;
+            flex-direction: column;
+            margin-top: rem-calc(10);
+            background: var(--white);
+            justify-content: space-between;
+            border-radius: rem-calc(50) rem-calc(50) 0 0;
+            padding: rem-calc(110) rem-calc(35) rem-calc(30);
+        }
+
+        h3 {
+            font-weight: 700;
+            font-style: italic;
+            font-size: rem-calc(32);
+            text-decoration: underline;
+            margin-bottom: rem-calc(20);
+            color: var(--secondary-color);
+        }
+
+        ol {
+            li {
+                display: flex;
+                line-height: 130%;
+                font-size: rem-calc(18);
+                justify-content: space-between;
+            }
+        }
+    }
+
+    @media(max-width: 320px) {
+        margin-top: rem-calc(10);
+
+        .pokemon__names {
+            h1 { font-size: rem-calc(20); }
+
+            h2 {
+                top: rem-calc(35);
+                font-size: rem-calc(20);
+            }
+        }
+
+        .pokemon__status {
+            position: relative;
+
+            img {
+                left: rem-calc(0);
+                top: rem-calc(-80);
+                position: absolute;
+                max-width: rem-calc(100);
+            }
+
+            &__statistics {
+                min-height: 54.7vh;
+                padding-top: rem-calc(50);
+            }
+        }
+    }
+}
