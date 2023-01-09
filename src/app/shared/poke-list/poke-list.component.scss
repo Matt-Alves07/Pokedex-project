@@ -4,13 +4,14 @@
 :host {
     display: flex;
     padding: 20 0;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     .pokemon {
         width: 42%;
         color: #000;
         display: flex;
-        height: rem-calc(80);
+        height: rem-calc(85);
         padding: rem-calc(20);
         text-decoration: none;
         margin-top: rem-calc(10);
@@ -22,6 +23,7 @@
                 font-weight: 700;
                 font-style: italic;
                 font-size: rem-calc(22);
+                text-transform: capitalize;
                 margin-bottom: rem-calc(10);
             }
 
@@ -55,7 +57,7 @@
             background: url('../../../assets/bg/background-list-pokemons.svg');
 
             img {
-                width: rem-calc(80);
+                width: rem-calc(60);
             }
         }
     }
