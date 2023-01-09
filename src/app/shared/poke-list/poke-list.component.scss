@@ -9,13 +9,13 @@
 
     .pokemon {
         width: 42%;
-        color: #000;
         display: flex;
         height: rem-calc(85);
         padding: rem-calc(20);
         text-decoration: none;
         margin-top: rem-calc(10);
         background: var(--white);
+        color: var(--primary-color);
         border-radius: rem-calc(10);
 
         &__status {

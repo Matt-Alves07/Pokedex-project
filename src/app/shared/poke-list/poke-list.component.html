@@ -1,7 +1,7 @@
 <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
-    <a href="" class="pokemon" *ngIf="pokemon.status">
+    <a [routerLink]="['details', pokemon.status.id]" href="" class="pokemon" *ngIf="pokemon.status">
         <section class="pokemon__status">
-            <h2 class="pokemon-name">{{ pokemon.name }} {{ pokemon.status.id }}</h2>
+            <h2 class="pokemon-name">{{ pokemon.name }}</h2>
         
             <ul class="pokemon-list">
                 <li class="pokemon-list-item" *ngFor="let value of pokemon.status.types">
